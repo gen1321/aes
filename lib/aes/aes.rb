@@ -152,6 +152,7 @@ module AES
         # Toggles encryption mode
         @cipher.send(action)
         @cipher.padding = @options[:padding]
+        @cipher.key = @key
       end
   end
 end
